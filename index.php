@@ -13,6 +13,7 @@
     <!--Styles-->
     <link rel = "stylesheet" type = "text/css" href = "Styles.css">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     
     <!--Meta Data-->
     <meta charset = "utf-8">
@@ -22,30 +23,34 @@
 </head>
     
 <!--    Body    -->
-<body>
+<body id = "IndexBody">
     <!--Banner-->
     <header>
-        <a href = "index.php"><h1 id = "Title">Cheapo Mail</h1></a>
+        <a id = "IndexLink" href = "index.php"><h1 id = "Title">Cheapo Mail</h1></a>
         
-        <section id = "LogGroup">
-            <a href = "#">New User</a>
-            <a href = "Pages/Login.php">Login</a>
+        <section id = "Log">
+            <a id = "LogLink" href = "Pages/Login.php">Login</a>
         </section>
     </header>
     
-    <section id = "Display">
-        <section id = "DisplayText">
-            <h1>Keep Connected</h1>
-        </section>
-        
-    </section>
+    <!--Dynamic Content-->
+    <section id = "Content">
     
+        <section id = "Display">
+            <section id = "DisplayText">
+                <h1>Keep Connected</h1>
+            </section>
+
+        </section>
+    
+    </section>
     
     <footer>
         <p>&copy; Letts Clarke</p>
     </footer>
     
-    
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src = "Logic.js"></script>
 </body>
 
 </html>

@@ -5,6 +5,8 @@
 <head>
      <!--Styles-->
     <link rel = "stylesheet" type = "text/css" href = "../Styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     
     <!--Meta Data-->
     <meta charset = "utf-8">
@@ -13,10 +15,6 @@
     
 <!--    body    -->
 <body>
-    <header>
-        <a href = "../index.php"><h1 id = "Title">Cheapo Mail</h1></a>
-        <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
-    </header>
     
     <form class = "LogForm" action = "log.php" method = "post">
        
@@ -37,7 +35,9 @@
         <input type = "submit" class = "Btn" value = "Log In">
     </form>
     
-    
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src = "Logic.js"></script>
 </body>
+    
     
 </html>
