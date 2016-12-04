@@ -23,7 +23,7 @@
 </head>
     
 <!--    Body    -->
-<body id = "IndexBody">
+<body>
     <!--Banner-->
     <header>
         <a id = "IndexLink" href = "index.php"><h1 id = "Title">Cheapo Mail</h1></a>
@@ -35,14 +35,12 @@
     
     <!--Dynamic Content-->
     <section id = "Content">
-    
         <section id = "Display">
             <section id = "DisplayText">
                 <h1>Keep Connected</h1>
-            </section>
-
         </section>
-    
+    </section>
+
     </section>
     
     <footer>
@@ -50,7 +48,7 @@
     </footer>
     
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-    <script src = "Logic.js"></script>
+    <script src = "Scripts/Logic.js" type = "text/javascript"></script>
 </body>
 
 </html>

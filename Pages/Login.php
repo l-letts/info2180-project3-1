@@ -10,7 +10,7 @@
     
     <!--Meta Data-->
     <meta charset = "utf-8">
-    <meta name = "author" content = "Hakeem Clarke, Larnell Letts"
+    <meta name = "author" content = "Hakeem Clarke, Larnell Letts">
 </head>
     
 <!--    body    -->
@@ -32,11 +32,10 @@
         </section>
         
       
-        <input type = "submit" class = "Btn" value = "Log In">
+        <input type = "submit" class = "SubBtn" value = "Log In">
     </form>
     
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-    <script src = "Logic.js"></script>
+    
 </body>
     
     

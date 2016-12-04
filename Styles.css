@@ -1,10 +1,27 @@
 /*Entire Website*/
 html,body
 {
-    height: 100%;
+    
     margin: 0;
     padding: 0;
     font-family: 'Josefin Slab', serif;
+}
+
+html
+{
+    height: 100%;
+}
+
+body
+{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#Content
+{
+    flex: 1;
 }
 
 
@@ -19,7 +36,7 @@ html,body
 
 header 
 {
-    height: 5%;
+    height: 10%;
     width: 100%;
     color: white;
     margin-top: -2.2%;
@@ -50,24 +67,6 @@ a:hover
     margin-bottom: 2%;
     font-family: 'Open Sans', sans-serif;
 }
-
-.Btn
-{
-    color: white;
-    background-color:  #4585CF;
-    padding: 6px 12px;
-    border-color: #4585CF;
-    cursor: pointer;
-    margin-right: 4%;
-    border-radius: 4px;
-    font-family: 'Open Sans', sans-serif;
-}
-
-.Btn:hover
-{
-    background-color:#0B3C5D;
-}
-
 
 
 /*Display*/
@@ -122,22 +121,90 @@ a:hover
     margin-bottom: 10%;
 }
 
-.TextInput
+
+#MainForm 
 {
-    border-radius: 6px;
-    padding: 5px 10px;
-    border-width: 0.1px;
-    transition: box-shadow 0.3s, border 0.3s;
+   width: 40%;
+   margin: auto;
+   margin-top: 2%;
 }
 
-.TextInput:focus
+#SubSpace 
 {
-   border-width: 0.1px; 
-   padding: 5px 10px;
-   border-radius: 6px;
-   border: solid 1px #4585CF;
-   box-shadow: 0 0 5px 1px #4585CF;
+    text-align: center;
+    margin-top: 10px;
 }
+
+.SubBtn
+{
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px; 
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+}
+
+.SubBtn:hover
+{
+  color: #fff;
+  background-color: #286090;
+  border-color: #204d74;  
+}
+
+.TextInput
+{
+    display: block;
+    width: 80%;
+    height: 20px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    margin: auto;
+}
+
+label
+{
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.Invalid{
+    display: block;
+    width: 80%;
+    height: 20px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid red;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    margin: auto;
+}
+
+
 
 
 /*Footer*/
@@ -147,7 +214,6 @@ a:hover
 footer
 {
     padding: 0.5%;
-    margin-top: -2%;
     color: white;
     height: 10%;
     font-size: 18px;
