@@ -16,10 +16,10 @@
 <!--    body    -->
 <body>
     <?php
-        var $FirstName = $_POST["FirstName"];
-        var $LastName =  $_POST["LastName"];
-        var $Username = $_POST["Username"];
-        var $Password = $_POST["Password"];
+        $FirstName = $_POST["FirstName"];
+        $LastName =  $_POST["LastName"];
+        $Username = $_POST["Username"];
+        $Password = $_POST["Password"];
     
     
         //Validation
@@ -33,16 +33,18 @@
     
         //Fetch sql and create database or tables if they don't already exist
         //Database Info
-        $Servername = $_SERVER['SERVER_NAME'];
-        $UserNameDB = "CheapoDB";
-        $PasswordDB = "password";
+        $host = getenv('IP');
+        $username = getenv('C9_USER');
+        $password = '';
+        $dbname = 'schema';
+
+       
+        
         
         try {
-               $conn = new PDO("mysql:host=$Servername;dbname=CheapoDB", $UserNameDb, $PasswordDB);
+                $conn = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
                 // set the PDO error mode to exception
                 $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-                $sql = file_get_contents('../schema.sql');
-              
                 $conn->exec($sql);
                 
                 }
@@ -53,7 +55,7 @@
                 
         //Insert Data
         try {
-                    $conn = new PDO("mysql:host=$Servername;dbname=CheapoDB", $UserNameDb, $PasswordDB);
+                    $conn = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
                     
                     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
                     $sql = "INSERT INTO User (first_name, last_name, username, password)
